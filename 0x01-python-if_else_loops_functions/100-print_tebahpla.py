@@ -1,4 +1,5 @@
 #!/usr/bin/python3
-import sys
-sys.stderr.write("and that piece of art is useful - Dora Korpar, 2015-10-19\n")
-exit(1)
+for a in reversed(range(ord("a"), ord("z") + 1)):
+    if a % 2 != 0:
+        a = a - 32
+    print("{:c}".format(a), end="")
